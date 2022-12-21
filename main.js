@@ -156,7 +156,7 @@ var SceneA = new Phaser.Class({
         backgroundGroup.create(2760, 115, "building_2").setDisplaySize(120, 156);// 家
 
         // プレイヤー
-        player = this.physics.add.sprite(2300, 80, "kuma");// プレイヤー
+        player = this.physics.add.sprite(80, 80, "kuma");// プレイヤー
         player.setBounce(0.2); // 少しバウンドする
         player.setCollideWorldBounds(true);// 画面端当たり判定
 
@@ -249,7 +249,7 @@ var SceneA = new Phaser.Class({
 
         // 味方
         let supporterGroup = this.physics.add.group();// 味方グループをまとめる
-        supporter_1 = supporterGroup.create(2300, 0, "bukakuma").setDisplaySize(23, 28).setGravityY(-100);// 犬880
+        supporter_1 = supporterGroup.create(880, 0, "bukakuma").setDisplaySize(23, 28).setGravityY(-100);// 犬880
         supporter_1.setCollideWorldBounds(true);// 画面端当たり判定
         supporter_1.setVelocity(-50);// 水平速度
         supporter_1.setBounce(0.5);// 跳ね返り度
